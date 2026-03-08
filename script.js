@@ -334,3 +334,63 @@ document.head.appendChild(style);
 // Console branding
 console.log('%c🦌 Cervo Films', 'font-size: 20px; font-weight: bold; color: #ffffff;');
 console.log('%cTransformamos eventos em experiências cinematográficas', 'font-size: 14px; color: #666;');
+
+/* EXPANSÃO POR HOVER */
+
+document.querySelectorAll(".service-card").forEach(card => {
+
+    const video = card.querySelector(".service-video");
+
+    card.addEventListener("mouseenter", () => {
+
+        document.querySelectorAll(".service-card")
+        .forEach(c => c.classList.remove("expanded"));
+
+        card.classList.add("expanded");
+
+        if(video){
+            video.currentTime = 0;
+            video.play();
+        }
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.classList.remove("expanded");
+
+        if(video){
+            video.pause();
+            video.currentTime = 0;
+        }
+
+    });
+
+});
+
+
+
+const grid = document.querySelector('.services-grid');
+const cards = document.querySelectorAll('.service-card');
+
+cards.forEach(card => {
+
+    card.addEventListener('mouseenter', () => {
+
+        grid.classList.add('has-active');
+
+        cards.forEach(c => c.classList.remove('active'));
+
+        card.classList.add('active');
+
+    });
+
+});
+
+grid.addEventListener('mouseleave', () => {
+
+    grid.classList.remove('has-active');
+
+    cards.forEach(c => c.classList.remove('active'));
+
+});
