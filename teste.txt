@@ -1,0 +1,159 @@
+ <section id="team" class="team">
+            <div class="container">
+                <h2 class="section-title">Nossa Equipe</h2>
+            </div>
+            <div class="team-grid">
+
+                <div class="flex1">
+                    <div class="team-grid-card">
+                        <img src="assets/team/Thiago-Sodre.JPG" alt="Thiago Sodré" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Thiago Sodré</p> 
+                            <p class="team-role">CEO</p> 
+                        </article>
+                    </div>
+                    <div class="team-grid-card">
+                         <img src="assets/team/Wallison-Nobre.JPG" alt="Wallison Nobre" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Wallison Nobre</p> 
+                            <p class="team-role">Head de fotografia</p> 
+                        </article>
+                    </div>
+
+                     <div class="team-grid-card">
+                         <img src="assets/team/Thales-Borges.JPG" alt="Thales Borges" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Thales Borges</p> 
+                            <p class="team-role">head de produção e filmmaker</p> 
+                        </article>
+                    </div>
+
+                     <div class="team-grid-card">
+                         <img src="assets/team/Wendel-Henrique.JPEG" alt="Wendel Henrique" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Wendel Henrique</p> 
+                            <p class="team-role">Editor</p> 
+                        </article>
+                    </div>
+
+                     <div class="team-grid-card">
+                         <img src="assets/team/Thales-Borges.JPG" alt="Thales Borges" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Thales Borges</p> 
+                            <p class="team-role">Diretor de Fotografia</p> 
+                        </article>
+                    </div>
+                     <div class="team-grid-card">
+                         <img src="assets/team/Thales-Borges.JPG" alt="Thales Borges" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Thales Borges</p> 
+                            <p class="team-role">Diretor de Fotografia</p> 
+                        </article>
+                    </div>
+                    
+                </div>
+
+                <!-- <div class="flex2">
+                   
+                
+                    <div class="team-grid-card">
+                         <img src="assets/team/Katlen-Cruz.JPEG" alt="Katlen Cruz" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Katlen Cruz</p> 
+                            <p class="team-role">Diretora de Fotografia</p> 
+                        </article>
+                    </div>
+                    <div class="team-grid-card">
+                         <img src="assets/team/Wendel-Henrique.JPEG" alt="Wendel Henrique" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Wendel Henrique</p> 
+                            <p class="team-role">Diretor de Fotografia</p> 
+                        </article>
+                    </div>
+                    <div class="team-grid-card">
+                         <img src="assets/team/Katlen-Cruz.JPEG" alt="Katlen Cruz" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Katlen Cruz</p> 
+                            <p class="team-role">Diretora de Fotografia</p> 
+                        </article>
+                    </div> 
+                </div> -->
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+/* Team Section */
+.team-grid{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.team-grid-card{ 
+    position:relative; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+} 
+.team-grid-card img{ 
+    position: absolute; 
+    top: 0; 
+    z-index: -1; 
+    object-fit: cover; 
+} 
+.team-grid-card .team-grid-card-titles{ 
+    padding: var(--spacing-md); 
+    color: var(--color-primary); 
+} 
+.team-item:hover{ 
+    transform: scale(1.02); /* bring the color back on hover */ 
+    filter: grayscale(0%); 
+}
+
+/* linhas */
+.flex1,
+.flex2{
+    display: flex;
+    width: 100%;
+    height: 25rem;
+}
+
+/* cada card divide o espaço */
+.team-grid-card{
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+/* imagem ocupa todo o card */
+.team-grid-card img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* object-position: 50% 20%; */
+}
+
+.team-item{
+    filter: grayscale(100%);
+    transition: transform var(--transition-medium), filter var(--transition-medium);
+}
+
+.team-item:hover{
+    transform: scale(1.02);
+    filter: grayscale(0%);
+}
+
