@@ -2,25 +2,19 @@
             <div class="container">
                 <h2 class="section-title">Nossa Equipe</h2>
             </div>
-            <div class="team-grid">
+            <!-- <div class="team-grid">
 
                 <div class="flex1">
                     <div class="team-grid-card">
-                        <img src="assets/team/Thiago-Sodre.JPG" alt="Thiago Sodré" class="team-item" loading="lazy">
+                        <img src="assets/team/Thiago-Sodré.jpeg" alt="Thiago Sodré" class="team-item" loading="lazy">
                          <article class="team-grid-card-titles"> 
                             <p class="team-name">Thiago Sodré</p> 
                             <p class="team-role">CEO</p> 
                         </article>
                     </div>
-                    <div class="team-grid-card">
-                         <img src="assets/team/Wallison-Nobre.JPG" alt="Wallison Nobre" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Wallison Nobre</p> 
-                            <p class="team-role">Head de fotografia</p> 
-                        </article>
-                    </div>
+                 
 
-                     <div class="team-grid-card">
+                      <div class="team-grid-card">
                          <img src="assets/team/Thales-Borges.JPG" alt="Thales Borges" class="team-item" loading="lazy">
                          <article class="team-grid-card-titles"> 
                             <p class="team-name">Thales Borges</p> 
@@ -28,7 +22,7 @@
                         </article>
                     </div>
 
-                     <div class="team-grid-card">
+                        <div class="team-grid-card">
                          <img src="assets/team/Wendel-Henrique.JPEG" alt="Wendel Henrique" class="team-item" loading="lazy">
                          <article class="team-grid-card-titles"> 
                             <p class="team-name">Wendel Henrique</p> 
@@ -36,79 +30,192 @@
                         </article>
                     </div>
 
-                     <div class="team-grid-card">
-                         <img src="assets/team/Thales-Borges.JPG" alt="Thales Borges" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Thales Borges</p> 
-                            <p class="team-role">Diretor de Fotografia</p> 
-                        </article>
-                    </div>
-                     <div class="team-grid-card">
-                         <img src="assets/team/Thales-Borges.JPG" alt="Thales Borges" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Thales Borges</p> 
-                            <p class="team-role">Diretor de Fotografia</p> 
-                        </article>
-                    </div>
+                     
+
+                     
+              
+
+                    
                     
                 </div>
 
-                <!-- <div class="flex2">
+                 <div class="flex2">
+
+                    
                    
                 
                     <div class="team-grid-card">
-                         <img src="assets/team/Katlen-Cruz.JPEG" alt="Katlen Cruz" class="team-item" loading="lazy">
+                         <img src="assets/team/Rayane-Rocha.jpeg" alt="Rayane Rocha" class="team-item" loading="lazy">
                          <article class="team-grid-card-titles"> 
-                            <p class="team-name">Katlen Cruz</p> 
-                            <p class="team-role">Diretora de Fotografia</p> 
+                            <p class="team-name">Rayane Rocha</p> 
+                            <p class="team-role">Gestão de Projetos</p> 
                         </article>
                     </div>
-                    <div class="team-grid-card">
-                         <img src="assets/team/Wendel-Henrique.JPEG" alt="Wendel Henrique" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Wendel Henrique</p> 
-                            <p class="team-role">Diretor de Fotografia</p> 
-                        </article>
-                    </div>
-                    <div class="team-grid-card">
-                         <img src="assets/team/Katlen-Cruz.JPEG" alt="Katlen Cruz" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Katlen Cruz</p> 
-                            <p class="team-role">Diretora de Fotografia</p> 
-                        </article>
-                    </div> 
-                </div> -->
 
+                         <div class="team-grid-card">
+                         <img src="assets/team/Wallison-Nobre.jpeg" alt="Wallison Nobre" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Wallison Nobre</p> 
+                            <p class="team-role">Head de fotografia</p> 
+                        </article>
+                    </div>
+
+                   
+
+                  <div class="team-grid-card">
+                         <img src="assets/team/Kathlen-Cruz.jpeg" alt="Kathlen Cruz" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">Kathlen Cruz</p> 
+                            <p class="team-role">Filmmaker</p> 
+                        </article>
+                    </div>
+
+                     <div class="team-grid-card">
+                         <img src="assets/team/Joao-Victor.PNG" alt="João Victor" class="team-item" loading="lazy">
+                         <article class="team-grid-card-titles"> 
+                            <p class="team-name">João Victor</p> 
+                            <p class="team-role">Filmmaker</p> 
+                        </article>
+                    </div>
+
+
+
+                    
+                    
+
+                   
+                </div>  
+
+            </div> -->
+        
+            <div class="team-grid">
+
+            <div class="team-card">
+                <img src="assets/team/Thiago-Sodré.jpeg" alt="">
+                <div class="team-overlay">
+                <p class="team-name">Thiago Sodré</p>
+                <p class="team-role">CEO</p>
+                </div>
             </div>
+
+            <div class="team-card">
+                <img src="assets/team/Thales-Borges.JPG" alt="Thales Borges">
+                <div class="team-overlay">
+                <p class="team-name">Thales Borges</p>
+                <p class="team-role">Head de Produção</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="assets/team/Rayane-Rocha.jpeg" alt="Rayane Rocha">
+                <div class="team-overlay">
+                <p class="team-name">Rayane Rocha</p>
+                <p class="team-role">Gestão de Projetos </p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="assets/team/Wendel-Henrique.JPEG" alt="Wendel Henrique">
+                <div class="team-overlay">
+                <p class="team-name">Wendel Henrique</p>
+                <p class="team-role">Editor</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="assets/team/Kathlen-Cruz.jpeg" alt="Kathlen Cruz">
+                <div class="team-overlay">
+                <p class="team-name">Kathlen Cruz</p>
+                <p class="team-role">Filmmaker</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="assets/team/Joao-Victor.PNG" alt="">
+                <div class="team-overlay">
+                <p class="team-name">Joao Victor</p>
+                <p class="team-role">Fillmker</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="assets/team/Wallison-Nobre.jpeg" alt="">
+                <div class="team-overlay">
+                <p class="team-name">Wallison Nobre</p>
+                <p class="team-role">Head de fotografia</p>
+                </div>
+            </div>
+
+</div>
+
+
+
+        
         </section>
-
-
-
-
-
-
-
-/* Team Section */
 .team-grid{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    width:100vw;
+
+    margin-left:calc(50% - 50vw);
+    margin-right:calc(50% - 50vw);
+}
+.team-card{
+    position:relative;
+    aspect-ratio:3/4;
+    overflow:hidden;
+}
+.team-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 30%;
+
+    transition:transform .4s ease;
 }
 
-.team-grid-card{ 
-    position:relative; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-end; 
-} 
-.team-grid-card img{ 
-    position: absolute; 
-    top: 0; 
-    z-index: -1; 
-    object-fit: cover; 
-} 
+
+
+.team-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.4) 30%,
+        transparent 60%
+    );
+}
+
+
+.team-overlay{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+
+    z-index:2;
+    color:white;
+}
+
+.team-name{
+    font-size:16px;
+    font-weight:500;
+}
+
+.team-role{
+    font-size:12px;
+    opacity:.8;
+}
+
+
+.team-card:hover img{
+    transform:scale(1.05);
+}
+
+
+
 .team-grid-card .team-grid-card-titles{ 
     padding: var(--spacing-md); 
     color: var(--color-primary); 
@@ -123,8 +230,12 @@
 .flex2{
     display: flex;
     width: 100%;
+
     height: 25rem;
+
+    padding-inline:3rem;
 }
+
 
 /* cada card divide o espaço */
 .team-grid-card{
@@ -134,26 +245,67 @@
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
+    
 }
 
 /* imagem ocupa todo o card */
 .team-grid-card img{
     position: absolute;
     inset: 0;
+
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-    /* object-position: 50% 20%; */
-}
 
-.team-item{
     filter: grayscale(100%);
-    transition: transform var(--transition-medium), filter var(--transition-medium);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+/* Thiago Sodré */
+.team-grid-card:nth-child(1) img{
+    object-position: center 25%;
 }
 
-.team-item:hover{
+/* Wallison Nobre */
+.team-grid-card:nth-child(2) img{
+    object-position: center 40%;
+}
+
+/* Wendel Henrique */
+.team-grid-card:nth-child(3) img{
+    object-position: center 20%;
+}
+
+/* Rayane Rocha */
+.team-grid-card:nth-child(4) img{
+    object-position: center 35%;
+}
+
+/* Thales Borges */
+.team-grid-card:nth-child(5) img{
+    object-position: center 30%;
+}
+
+/* Kathlen Cruz */
+.team-grid-card:nth-child(6) img{
+    object-position: center 30%;
+}
+
+/* João Victor */
+.team-grid-card:nth-child(7) img{
+    object-position: center 28%;
+}
+
+
+.team-grid-card:hover img{
     transform: scale(1.02);
     filter: grayscale(0%);
 }
+.team-item {
+    display: block;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
 
+.team-item:hover {
+    transform: scale(1.02);
+    filter: grayscale(0%);
+}
