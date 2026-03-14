@@ -1,93 +1,131 @@
- <section id="team" class="team">
+/* TEAM GRID */
+
+.team-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+    margin-right:calc(50% - 50vw);
+
+    padding-inline:5rem;
+}
+
+
+/* ===== DESKTOP ===== */
+
+/* padrão 4 */
+.team-card{
+    flex:0 0 25%;
+    position:relative;
+    aspect-ratio:3/4;
+    overflow:hidden;
+}
+
+
+/* primeira linha 3 */
+.team-card:nth-child(-n+3){
+    flex:0 0 33.333%;
+    /* height: 28rem; */
+}
+
+
+/* ===== TABLET ===== */
+
+@media (max-width:900px){
+
+.team-card{
+    flex:0 0 50%;
+}
+
+.team-card:nth-child(-n+3){
+    flex:0 0 50%;
+    height: auto;
+}
+
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width:500px){
+
+.team-grid{
+    padding-inline:1rem;
+}
+
+.team-card{
+    flex:0 0 50%;
+}
+
+.team-card:nth-child(-n+3){
+    flex:0 0 50%;
+    height: auto;
+}
+
+}
+
+
+/* CARD IMAGE */
+
+.team-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 30%;
+    transition:transform .4s ease;
+}
+
+.team-card:hover img{
+    transform:scale(1.05);
+}
+
+
+/* OVERLAY */
+
+.team-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.4) 30%,
+        transparent 60%
+    );
+}
+
+.team-overlay{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+
+    z-index:2;
+    color:white;
+}
+
+
+/* TEXT */
+
+.team-name{
+    font-family:"Playfair Display", serif;
+    letter-spacing:.2px;
+    font-weight:500;
+    font-size:clamp(14px,1.2vw,20px);
+}
+
+.team-role{
+    font-size:clamp(11px,0.9vw,14px);
+    opacity:.8;
+}
+
+   <section id="team" class="team">
             <div class="container">
                 <h2 class="section-title">Nossa Equipe</h2>
             </div>
-            <!-- <div class="team-grid">
-
-                <div class="flex1">
-                    <div class="team-grid-card">
-                        <img src="assets/team/Thiago-Sodré.jpeg" alt="Thiago Sodré" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Thiago Sodré</p> 
-                            <p class="team-role">CEO</p> 
-                        </article>
-                    </div>
-                 
-
-                      <div class="team-grid-card">
-                         <img src="assets/team/Thales-Borges.JPG" alt="Thales Borges" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Thales Borges</p> 
-                            <p class="team-role">head de produção e filmmaker</p> 
-                        </article>
-                    </div>
-
-                        <div class="team-grid-card">
-                         <img src="assets/team/Wendel-Henrique.JPEG" alt="Wendel Henrique" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Wendel Henrique</p> 
-                            <p class="team-role">Editor</p> 
-                        </article>
-                    </div>
-
-                     
-
-                     
-              
-
-                    
-                    
-                </div>
-
-                 <div class="flex2">
-
-                    
-                   
-                
-                    <div class="team-grid-card">
-                         <img src="assets/team/Rayane-Rocha.jpeg" alt="Rayane Rocha" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Rayane Rocha</p> 
-                            <p class="team-role">Gestão de Projetos</p> 
-                        </article>
-                    </div>
-
-                         <div class="team-grid-card">
-                         <img src="assets/team/Wallison-Nobre.jpeg" alt="Wallison Nobre" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Wallison Nobre</p> 
-                            <p class="team-role">Head de fotografia</p> 
-                        </article>
-                    </div>
-
-                   
-
-                  <div class="team-grid-card">
-                         <img src="assets/team/Kathlen-Cruz.jpeg" alt="Kathlen Cruz" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">Kathlen Cruz</p> 
-                            <p class="team-role">Filmmaker</p> 
-                        </article>
-                    </div>
-
-                     <div class="team-grid-card">
-                         <img src="assets/team/Joao-Victor.PNG" alt="João Victor" class="team-item" loading="lazy">
-                         <article class="team-grid-card-titles"> 
-                            <p class="team-name">João Victor</p> 
-                            <p class="team-role">Filmmaker</p> 
-                        </article>
-                    </div>
-
-
-
-                    
-                    
-
-                   
-                </div>  
-
-            </div> -->
-        
+           
             <div class="team-grid">
 
             <div class="team-card">
@@ -103,6 +141,15 @@
                 <div class="team-overlay">
                 <p class="team-name">Thales Borges</p>
                 <p class="team-role">Head de Produção</p>
+                </div>
+            </div>
+
+            
+            <div class="team-card">
+                <img src="assets/team/Wallison-Nobre.jpeg" alt="">
+                <div class="team-overlay">
+                <p class="team-name">Wallison Nobre</p>
+                <p class="team-role">Head de fotografia</p>
                 </div>
             </div>
 
@@ -138,174 +185,10 @@
                 </div>
             </div>
 
-            <div class="team-card">
-                <img src="assets/team/Wallison-Nobre.jpeg" alt="">
-                <div class="team-overlay">
-                <p class="team-name">Wallison Nobre</p>
-                <p class="team-role">Head de fotografia</p>
-                </div>
+
             </div>
 
-</div>
 
-
-
-        
         </section>
-.team-grid{
-    display:grid;
-    grid-template-columns:repeat(5, 1fr);
-    width:100vw;
-
-    margin-left:calc(50% - 50vw);
-    margin-right:calc(50% - 50vw);
-}
-.team-card{
-    position:relative;
-    aspect-ratio:3/4;
-    overflow:hidden;
-}
-.team-card img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center 30%;
-
-    transition:transform .4s ease;
-}
 
 
-
-.team-card::after{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background:linear-gradient(
-        to top,
-        rgba(0,0,0,0.8) 0%,
-        rgba(0,0,0,0.4) 30%,
-        transparent 60%
-    );
-}
-
-
-.team-overlay{
-    position:absolute;
-    bottom:20px;
-    left:20px;
-
-    z-index:2;
-    color:white;
-}
-
-.team-name{
-    font-size:16px;
-    font-weight:500;
-}
-
-.team-role{
-    font-size:12px;
-    opacity:.8;
-}
-
-
-.team-card:hover img{
-    transform:scale(1.05);
-}
-
-
-
-.team-grid-card .team-grid-card-titles{ 
-    padding: var(--spacing-md); 
-    color: var(--color-primary); 
-} 
-.team-item:hover{ 
-    transform: scale(1.02); /* bring the color back on hover */ 
-    filter: grayscale(0%); 
-}
-
-/* linhas */
-.flex1,
-.flex2{
-    display: flex;
-    width: 100%;
-
-    height: 25rem;
-
-    padding-inline:3rem;
-}
-
-
-/* cada card divide o espaço */
-.team-grid-card{
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    overflow: hidden;
-    
-}
-
-/* imagem ocupa todo o card */
-.team-grid-card img{
-    position: absolute;
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    filter: grayscale(100%);
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-/* Thiago Sodré */
-.team-grid-card:nth-child(1) img{
-    object-position: center 25%;
-}
-
-/* Wallison Nobre */
-.team-grid-card:nth-child(2) img{
-    object-position: center 40%;
-}
-
-/* Wendel Henrique */
-.team-grid-card:nth-child(3) img{
-    object-position: center 20%;
-}
-
-/* Rayane Rocha */
-.team-grid-card:nth-child(4) img{
-    object-position: center 35%;
-}
-
-/* Thales Borges */
-.team-grid-card:nth-child(5) img{
-    object-position: center 30%;
-}
-
-/* Kathlen Cruz */
-.team-grid-card:nth-child(6) img{
-    object-position: center 30%;
-}
-
-/* João Victor */
-.team-grid-card:nth-child(7) img{
-    object-position: center 28%;
-}
-
-
-.team-grid-card:hover img{
-    transform: scale(1.02);
-    filter: grayscale(0%);
-}
-.team-item {
-    display: block;
-    filter: grayscale(100%);
-    transition: all 0.3s ease;
-}
-
-.team-item:hover {
-    transform: scale(1.02);
-    filter: grayscale(0%);
-}
